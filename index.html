@@ -14,7 +14,7 @@
   </head>
   <body>
     <main class="flex justify-center">
-      <div class="mockup-phone">
+      <div class="mockup-phone bg-amber-50">
         <div class="camera"></div>
         <div class="mockup-phone-displa grid place-content-center">
           <!-- login section start -->
@@ -23,16 +23,23 @@
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="card-body">
                   <fieldset class="fieldset">
-                    <label class="label">Email</label>
-                    <input type="email" class="input" placeholder="Email" />
-                    <label class="label">Password</label>
+                    <label class="label">Mobile Number</label>
+                    <input
+                      id="phone-number"
+                      type="text"
+                      class="input"
+                      placeholder="Enter your number"
+                    />
+                    <label class="label">4 Digit Pin</label>
                     <input
                       type="password"
                       class="input"
-                      placeholder="Password"
+                      placeholder="Enter 4 Digit Pin"
                     />
                     <div><a class="link link-hover">Forgot password?</a></div>
-                    <button class="btn btn-neutral mt-4">Login</button>
+                    <button id="login-btn" class="btn btn-neutral mt-4">
+                      Login
+                    </button>
                   </fieldset>
                 </div>
               </div>
@@ -42,5 +49,6 @@
         </div>
       </div>
     </main>
+    <script src="js/login.js"></script>
   </body>
 </html>
