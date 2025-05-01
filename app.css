@@ -1,0 +1,17 @@
+/* app.css */
+@import "tailwindcss";
+
+/* 1 — design tokens */
+@theme {
+  /* new colour scale */
+  --color-brand-500: oklch(0.72 0.15 210);
+  --spacing: 0.25rem; /* base spacing scale */
+  --font-display: "Inter", sans-serif;
+}
+
+/* 2 — extra utilities */
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
