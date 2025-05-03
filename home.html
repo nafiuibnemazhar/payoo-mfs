@@ -19,15 +19,49 @@
         <div class="mockup-phone-display grid place-content-center">
           <!-- available balance start -->
           <div class="stats shadow">
-            <div class="stat">
+            <div class="stat text-center">
               <div class="stat-value">89,400</div>
               <div class="stat-desc">Available balance</div>
             </div>
           </div>
           <div class="divider"></div>
           <!-- available balance end -->
+          <!-- User action button start -->
+          <div class="flex gap-2">
+            <button class="btn btn-outline">Add money</button>
+            <button class="btn btn-outline btn-primary">Cash out</button>
+          </div>
+          <!-- User action button end -->
+          <div class="divider"></div>
+          <!-- add money form start -->
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label">Amount</label>
+                <input
+                  id="input-add-money"
+                  type="email"
+                  class="input"
+                  placeholder="Please enter amount"
+                />
+                <label class="label">Pin</label>
+                <input
+                  id="input-pin-number"
+                  type="password"
+                  class="input"
+                  autocomplete="off"
+                  placeholder="Please enter your pin"
+                />
+                <button id="btn-add-money" class="btn btn-neutral mt-4">
+                  Add money
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- add money form end -->
         </div>
       </div>
     </main>
+    <script src="js/home.js"></script>
   </body>
 </html>
